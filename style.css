@@ -403,8 +403,7 @@ h1{
 }
 
 .tools-container {
-    position: relative;
-    bottom: 6330px;
+
     background: linear-gradient(135deg, #1e3c72, #2a5298);
     color: white;
     padding: 60px 50px;
@@ -454,7 +453,7 @@ h1{
 }
 .Stage {
     text-align: center;
-    margin-top: 80px;
+    margin-top: 840px;
 }
 
 .Stage h1 {
@@ -521,7 +520,7 @@ h1{
 
 .qualites-container {
     position: relative;
-    bottom: 713px;
+    bottom: 629px;
     background: linear-gradient(135deg, #1e3c72, #2a5298);
     color: white;
     padding: 60px 50px;
@@ -651,6 +650,33 @@ h1{
 .contact-form input[type="submit"]:hover {
     background: #0056b3;
 }
+.rgpd-consent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+    color: white;
+}
+
+.rgpd-consent input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+.rgpd-consent label {
+    font-size: 14px;
+    color: white;
+}
+
+.rgpd-consent a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.rgpd-consent a:hover {
+    text-decoration: underline;
+}
 
 
 @keyframes fadeInUp {
@@ -719,16 +745,18 @@ input[type="submit"]:hover {
 
 .cyber-wrapper {
     position: relative;
-    bottom: 700px;
+    bottom: 252px;
     background: linear-gradient(135deg, #1e3c72, #2a5298);
     color: white;
     padding: 60px 40px;
     border-radius: 20px;
     max-width: 1400px;
+    width: 100%;
     margin: 60px auto;
     text-align: center;
     font-family: 'Segoe UI', sans-serif;
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    box-sizing: border-box; /* Garantit que les paddings ne perturbent pas la largeur totale */
 }
 
 .cyber-wrapper .titre {
@@ -801,7 +829,8 @@ input[type="submit"]:hover {
 
 .Parcours {
     position: relative;
-    bottom: 700px;
+    bottom: 600px;
+
     background: linear-gradient(135deg, #1e3c72, #2a5298);
     color: white;
     padding: 40px 20px;
@@ -819,13 +848,15 @@ input[type="submit"]:hover {
 }
 
 .Diplomes {
+
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
     margin: 30px auto;
-    position:relative;
-    bottom: 718px;
+    bottom: 600px;
+
 }
 
 .diplome-card {
@@ -867,8 +898,6 @@ input[type="submit"]:hover {
     transform: scale(1.05);
 }
 .Projets {
-    position: relative;
-    bottom: 710px;
     background: linear-gradient(135deg, #1e3c72, #2a5298);
     color: white;
     padding: 60px 40px;
@@ -878,7 +907,11 @@ input[type="submit"]:hover {
     max-width: 1200px;
     font-family: 'Segoe UI', sans-serif;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    position: relative;
+    bottom: 400px;
 }
+
+
 
 .Projets h1 {
     font-size: 2.5rem;
@@ -945,12 +978,20 @@ input[type="submit"]:hover {
 
 
 @media (max-width: 768px) {
+    .KERAN{
+        margin-left: -1vw;
+    }
     .con{
         width: 170%;
     }
     .social-icons{
         position: relative;
         top: 30px;
+        right: 5vw;
+    }
+    #texte{
+        position: relative;
+        left: 18vw;
     }
     .comptétences {
         text-align: center;
@@ -984,172 +1025,310 @@ input[type="submit"]:hover {
         text-align: center;
         padding: 10% 5%;
     }
-    .div-text, .description {
+     .description {
         text-align: center;
+         right: 10vw;
     }
     .CV {
         margin-left: 0;
         display: block;
-        left: 50%;
+        left: 45%;
         bottom: 136px;
         position: relative;
     }
     .cyber-wrapper{
         width: 63%;
     }
+    .footer{
+        width: 1283px;
+    }
 }
 @media(max-width:431px) {
-    .head{
-
-    }
-    .con {
-        width: 100%;
-        margin-top: 60px;
-    }
-    .social-icons{
-        position: relative;
-        right: 1094px;
-        top: 147px;
-
-    }
-    .comp{
-        position: relative;
-        left: 123px;
-        bottom: 184px;
-    }
-    .KERAN{
-        position: relative;
-        left: -233px;
-    }
-    .etudes-section{
-        position: relative;
-        bottom: 122px;
-        right: 144px;
-    }
-    .competences-section{
-        position: relative;
-        bottom: 80px;
-        width: 787px;
-        right: 145px;
-    }
     .barre{
         display: block;
     }
-    #texte{
-        position: relative;
-        left: 307px;
+
+
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
     }
-    .BTS{
-        position: relative;
-        left: 125px;
-        bottom: 303px;
+
+    .con {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        background-color: midnightblue;
+        width: 100%;
+        padding: 5vw;
     }
-    .comptétences{
+
+    .social-icons {
         position: relative;
-        bottom: 222px;
+        right: 30vw;
+        top: 1vh;
     }
-    .Ou{
+
+    .comp {
         position: relative;
-        bottom: 282px;
-        right: 153px;
+        left: 10vw;
+        bottom: 20vh;
     }
-    .Ou h1{
+
+    .KERAN {
         position: relative;
-        right: 159px;
-    }
-    .Outils{
-        position: relative;
-        bottom: 7px;
-        left: -9px;
-    }
-    .Stage{
-       display: block;
-    }
-    .Rapport{
-        width: 554px;
-        position: relative;
-        bottom: 6411px;
-        left: 348px;
-        height: 200px;
+        left: -4vw;
+        top: 13vw;
     }
 
 
-    .Stage h1{
-        width: 459px;
+    .etudes-section {
         position: relative;
-        left: 202px;
-        bottom: 6100px;
+        bottom: 10vh;
+        right: 5vw;
     }
-    .Qualité{
+    .competences-section h1{
+        margin-left: 11vw;
+    }
+
+
+    .competences-section {
         position: relative;
-        bottom: 514px;
-        left: 51px;
+        bottom: 5vh;
+        width: 80%;
+        right: 6vw;
     }
-    .Qual{
+
+    .barre {
+        display: block;
+    }
+
+    #texte {
         position: relative;
-        bottom: 411px;
-        left: 130px;
+        left: -25vw;
+        top: 8vw;
     }
-    .Qualité h1{
+
+    .BTS {
         position: relative;
-        left: 28px;
+        left: 15vw;
+        bottom: 25vh;
     }
-    .tools-container{
-        width: 879px;
+
+    .comptétences {
         position: relative;
-        left: 164px;
-        bottom: 6435px;
+        bottom: 20vh;
     }
-    .description{
-        margin-left: 225px;
+    .footer{
+        width: 96vw;
+        position: relative;
+        bottom: 1px;
+    }
+
+    .Ou {
+        position: relative;
+        bottom: 30vh;
+        right: 20vw;
+    }
+
+    .Ou h1 {
+        position: relative;
+        right: 25vw;
+    }
+
+    .Outils {
+        position: relative;
+        bottom: 2vh;
+        left: 0vw;
+    }
+
+    .Stage {
+        display: block;
+        display: block;
+        position: relative;
+        right: 15vw;
+        bottom: 135vw;
+    }
+
+    .Rapport {
+        height: auto;
+        position: relative;
+        right: 4vw;
+    }
+
+
+    .Stage h1 {
+        width: 80%;
+        position: relative;
+        left: 10vw;
+        bottom: 20vh;
+    }
+
+    .Qualité {
+        position: relative;
+        bottom: 25vh;
+        left: 10vw;
+    }
+
+    .Qual {
+        position: relative;
+        bottom: 20vh;
+        left: 15vw;
+    }
+
+    .Qualité h1 {
+        position: relative;
+        left: 10vw;
+    }
+
+    .description {
+        margin-left: 10vw;
+    }
+    .contact-section {
+        margin-right: 10vw;
+    }
+
+    .qualites-container {
+        position: relative;
+        right: 6vw;
+    }
+
+
+    .Diplomes {
+        display: flex;
+        justify-content: space-between;
+        margin-left: -7vw;
+        bottom: 64vh;
+    }
+
+    .Projets {
+        padding: 30px 15px;
+        margin: 20px auto;
+        max-width: 100%;
+        bottom: 140px;
+        border-radius: 10px;
+        text-align: center;
+        right: 5vw;
+    }
+
+    .Projets h1 {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+        margin-right: 0;
+        position: relative;
+        right: 17vw;
+    }
+
+    .description-projets {
+        font-size: 14px;
+        line-height: 1.4;
+        margin-bottom: 20px;
+        padding: 0 10px;
+    }
+
+    .ProjetsGalerie {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .projet-card {
+        width: 90%;
+        max-width: 320px;
+        padding: 10px;
+    }
+
+    .projet-titre {
+        font-size: 14px;
+        line-height: 1.4;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .projet-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+    }
+
+    .projet-card img:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+
+    .cyber-wrapper {
+        width: 76vw;
+        padding: 77px 15px;
+        bottom: 150px;
+        right: 5vw;
+    }
+    .titre {
+        left: 1vw;
+    }
+    .projet-titre{
+        display: none;
+    }
+    .cyber-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    .tp-box {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+
+    .tp-box img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+
+    .tp-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .titre {
+        position: relative;
+        right: 5vw;
+    }
+
+    #cont {
+        display: block;
+    }
+
+    .tp-button {
+        position: relative;
+        right: 5vw;
+    }
+
+    .tools-container {
+        width: 85%;
+        position: relative;
+        left: -6vw;
     }
     .CV{
-        margin-left: -181px;
+        position: relative;
+        top: -11vw;
+        left: 30vw;
     }
     .Parcours{
-        margin-right: 927px;
-
-
-    }
-    .contact-section{
-        margin-right: 284px;
-
-    }
-    .qualites-container{
-        margin-right: 620px;
-    }
-    .Diplomes{
-        display: -webkit-box;
-        margin-left: 624px;
-        bottom: 719px;
-    }
-    .Projets{
-        display: inline-table;
-        bottom: 3196px;
-        right: 152px;
-    }
-    .cyber-wrapper{
-        display: table-caption;
-        left: -7%;
-        bottom: 1444px
-
-
-
-    }
-    .titre{
         position: relative;
-        right: 69px;
+        right: 4vw;
     }
-    #cont{
-       display: block;
-    }
-    .tp-button{
-        position: relative;
-        right: 35px;
-    }
-    html, body{
-        position: absolute;
-
+    .border{
+        display: none;
     }
 
 }
