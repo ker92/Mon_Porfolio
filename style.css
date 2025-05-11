@@ -248,21 +248,25 @@ h1{
 
 
 
-.CV{
-    background-color: #6a0dad;
+.CV {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #2e86de;
     color: white;
-    padding: 12px 24px;
-    font-size: 16px;
-    font-weight: bold;
-    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
     border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.3s, transform 0.2s;
-    margin-left: 500px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    width: 4vw;
+    margin-left: 32vw;
 }
+
 .CV:hover {
-    background-color: #45a049;
+    background-color: #1e5faf;
 }
+
 .competences-section {
     background: linear-gradient(135deg, #1e3c72, #2a5298);
     color: white;
@@ -801,20 +805,23 @@ input[type="submit"]:hover {
 }
 
 .tp-button {
-    background-color: #ffffff;
-    color: #1e3c72;
-    border: none;
-    padding: 12px 22px;
-    border-radius: 30px;
-    font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #2e86de;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 45px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
 }
 
 .tp-button:hover {
-    background-color: #e6e6e6;
-    transform: scale(1.05);
+    background-color: #388E3C;
 }
+
 
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(40px); }
@@ -1321,7 +1328,8 @@ input[type="submit"]:hover {
     .CV{
         position: relative;
         top: -11vw;
-        left: 30vw;
+        left: 29vw;
+        width: 21vw;
     }
     .Parcours{
         position: relative;
